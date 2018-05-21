@@ -5,11 +5,34 @@
   <title>Exercice 4</title>
 </head>
 <body>
-  <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
-    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
-    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
-    <button type="button" name="button">RAZ</button>
+  <form id="formulaire">
+    <label for="nom">Votre nom  : </label>
+    <input type="text" name="nom" value="Doe" id="nom" />
+    
+    <label for="prenom">Votre prenom  : </label>
+    <input type="text" name="prenom" value="John" id="
+    prenom" />
+   
+    <label for="ville">Votre ville  : </label>
+    <input type="text" name="ville" value="New York" id="
+    ville" />
+    
+    <input type="text" name="ville" value="New York" id="trara" value="zaidoigzafozaefc"/>
+
+    <button type="button" name="button" id="button">RAZ</button>
   </form>
+
+	<script type="text/javascript">
+		
+  	document.getElementById('button').addEventListener('click', vide);
+    function vide(){
+      var champs = document.getElementsByTagName('input');
+      for (item of champs){
+        item.value = '';
+      }
+    };
+	
+	</script>
+
 </body>
 </html>

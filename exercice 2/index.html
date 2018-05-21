@@ -6,7 +6,18 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+    <label for="nom">Votre nom  : </label>
+    <input type="text" name="nom" value="" id="nom"/>
   </form>
+
+  <script type="text/javascript">
+  		
+
+      document.getElementById('nom').addEventListener("blur", affiche);
+  		function affiche() {
+  			alert('Merci de votre participation');
+  		};
+
+  </script>
 </body>
 </html>

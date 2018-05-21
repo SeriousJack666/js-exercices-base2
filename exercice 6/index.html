@@ -11,4 +11,20 @@
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
   </body>
+
+  <script type="text/javascript">
+    
+    var images = document.getElementsByTagName('img');
+
+    for (let item of images){
+        item.addEventListener("mouseover", event => {
+            item.src = 'images/'+item.id+'_2.jpg';
+        });
+        item.addEventListener("mouseout", event => {
+            item.src = 'images/'+item.id+'.jpg';
+        });
+    }
+
+  </script>
+
 </html>

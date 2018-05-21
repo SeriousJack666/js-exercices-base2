@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exercice 1</title>
-  </head>
-  <body>
-      <img src="images/image1.jpg" id="image1" />
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice 1</title>
+	</head>
+
+	<body>
+		<img src="images/image1.jpg" id="image1"/>
+		
+		<script type="text/javascript">
+
+			var image_displayed = document.getElementsByTagName('img');
+
+			image_displayed.item(0).addEventListener('mouseover', metla2);
+			image_displayed.item(0).addEventListener('mouseout', remetla1);
+
+			function metla2(){
+				this.src = 'images/image1_2.jpg';
+			};
+
+			function remetla1(){
+				this.src = 'images/image1.jpg';
+			};		
+
+				
+			
+		</script>
+
+	</body>
+
 </html>
